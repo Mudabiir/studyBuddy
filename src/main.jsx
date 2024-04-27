@@ -14,6 +14,7 @@ import Collab from './Collab.jsx'
 import Resources from './Resources.jsx'
 import Home from './Home.jsx'
 import Flashcards from './Flashcards.jsx'
+import VideoPage from './VideoPage.jsx'
 
 
 
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       { path: "/discuss", element: <Discuss /> },
       { path: "/resources", element: <Resources /> },
       { path: "/resources/flashcards", element: <Flashcards /> },
+    {  path: "/collab/room/:id", element: <VideoPage  /> },
       // {
       //   element: <DashboardLayout />,
       //   path: "dashboard",
