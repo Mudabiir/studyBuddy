@@ -5,6 +5,7 @@ import './index.css'
 import { ClerkProvider, useAuth } from '@clerk/clerk-react'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import ProfilePage from './routes/components/profile.jsx'
+import { Provider } from 'react-redux'
 
 // components
 
@@ -14,6 +15,7 @@ import Collab from './Collab.jsx'
 import Resources from './Resources.jsx'
 import Home from './Home.jsx'
 import Flashcards from './Flashcards.jsx'
+import { store } from './app/store.js'
 
 
 
@@ -49,8 +51,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Provider store={store}>
      <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <RouterProvider router={router} />
     </ClerkProvider>
-  </React.StrictMode>,
+    </Provider>
+  </React.StrictMode>
 )

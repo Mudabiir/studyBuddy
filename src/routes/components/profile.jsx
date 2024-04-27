@@ -1,9 +1,10 @@
 import React from 'react'
 import { UserButton } from '@clerk/clerk-react'
+// import Editprofile from './Editprofile'
 function ProfilePage() {
   return (
     <div>
-      <UserButton />
+        profile
     </div>
   )
 }
