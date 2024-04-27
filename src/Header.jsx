@@ -1,13 +1,10 @@
 import { useAuth } from '@clerk/clerk-react'
 import React from 'react'
-import { Link,NavLink } from 'react-router-dom'
-import { UserButton   } from '@clerk/clerk-react';
-import Navbar from './Navbar';
+import { Link } from 'react-router-dom'
+import { UserButton   } from '@clerk/clerk-react'
 
 function Header() {
-    const pages=[
-        'Discussion','Collab','Resources','Home','Profile',
-    ];
+    
     const {userId}=useAuth();
     {console.log(userId)}
     if(!userId) return;

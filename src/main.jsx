@@ -15,7 +15,11 @@ import Collab from './Collab.jsx'
 import Resources from './Resources.jsx'
 import Home from './Home.jsx'
 import Flashcards from './Flashcards.jsx'
+<<<<<<< HEAD
 import { store } from './app/store.js'
+=======
+import VideoPage from './VideoPage.jsx'
+>>>>>>> e1869ddbc42e8936349b0093226a6c2d7c871fc3
 
 
 
@@ -36,6 +40,7 @@ const router = createBrowserRouter([
       { path: "/discussion", element: <Discuss /> },
       { path: "/resources", element: <Resources /> },
       { path: "/resources/flashcards", element: <Flashcards /> },
+    {  path: "/collab/room/:id", element: <VideoPage  /> },
       // {
       //   element: <DashboardLayout />,
       //   path: "dashboard",
