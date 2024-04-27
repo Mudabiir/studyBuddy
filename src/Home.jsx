@@ -5,6 +5,9 @@ function Home() {
     <>
     <Link to='/profile'>profile</Link>
     <Link to='/resources/flashcards'>create flashCards</Link>
+      <div>
+           ok
+      </div>
     </>
   )
 }

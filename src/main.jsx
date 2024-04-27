@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       { path: "/profile", element: <ProfilePage /> },
       { path: "/collab", element: <Collab /> },
       { path: "/home", element: <Home /> },
-      { path: "/discuss", element: <Discuss /> },
+      { path: "/discussion", element: <Discuss /> },
       { path: "/resources", element: <Resources /> },
       { path: "/resources/flashcards", element: <Flashcards /> },
       // {
